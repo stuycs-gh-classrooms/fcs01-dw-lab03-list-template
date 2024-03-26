@@ -18,8 +18,9 @@ def rand_list(n, limit):
 print(('=' * 10) + "Problem 0" + ('=' * 10))
 a = rand_list(10, 10)
 b = rand_list(10, 10)
-print(len(a), a)
-print(len(b), b)
+print("list a: ", len(a), a)
+print("list b: ", len(b), b)
+
 
 # End Problem 0
 #==================================================
@@ -49,11 +50,14 @@ def bar_graph(g):
 # 9: ========
 print(('=' * 10) + "Problem 1" + ('=' * 10))
 test = [9, 5, 5, 3, 1, 5, 9, 5, 7, 8]
+print("test list:")
 print(bar_graph(test))
 
 # This should print out the bar graph for your random
 # lists from Problem 0
+print("list a:")
 print(bar_graph(a))
+print("list b:")
 print(bar_graph(b))
 
 # End Problem 1
@@ -73,12 +77,12 @@ def list_avg( g ):
 
 print(('=' * 10) + "Problem 2" + ('=' * 10))
 # This should print 5.7
-print( list_avg(test) )
+print('test list (5.7):', list_avg(test) )
 
 # This should print out the averages of your random
 # lists from Problem 0
-print( list_avg(a) )
-print( list_avg(b) )
+print( 'list a:', list_avg(a) )
+print( 'list b', list_avg(b) )
 
 # End problem 2
 #==================================================
@@ -96,7 +100,7 @@ def count(n, g):
 
 print(('=' * 10) + "Problem 3" + ('=' * 10))
 # This should print 4
-print( count(5, test) )
+print( 'test list (4):', count(5, test) )
 
 # End Problem 3
 #==================================================
@@ -117,10 +121,10 @@ def find_mode(g):
 
 print(('=' * 10) + "Problem 4" + ('=' * 10))
 # Should print 5
-print( find_mode(test) )
+print( 'test list (5):', find_mode(test) )
 
-print( find_mode(a) )
-print( find_mode(b) )
+print( 'list a:', find_mode(a) )
+print( 'list b:', find_mode(b) )
 
 #==================================================
 # Problem 5
@@ -142,20 +146,23 @@ print(('=' * 10) + "Problem 5" + ('=' * 10))
 # Should print
 # [0, 1, 0, 1, 0, 4, 0, 1, 1, 2]
 test_counts = list_counts( test, 10 )
-print( test_counts )
+print( 'test list ([0, 1, 0, 1, 0, 4, 0, 1, 1, 2]):', test_counts )
 
-print( list_counts(a, 10) )
-print( list_counts(b, 10) )
+print( 'list a:', list_counts(a, 10) )
+print( 'list b:', list_counts(b, 10) )
 
 # create a new list of 10 random values in the range [0, 5)
 # print that list
 # YOUR CODE HERE
-
+c = []
+print('list c (values [0, 5) ):', c)
 
 # create a list that correctly counts all the values in
 # the new list you just made.
 # print that list
 # YOUR CODE HERE
+c_counts = []
+print('list c counts:', c_counts)
 
 # End Problem 5
 #==================================================
